@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<title>Resume</title>
+  </head>
+  
+  <body>
+    <div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="resume.html">Resume</a>
+		<a href="mysite.html">Home</a>
+		<a href="summary.html">Summary</a>
+      </div>
+    </div>
+    <h1>My Resume</h1>
+	<h2>Chris Howell</h2>
+	<h2>603-275-1847 | howell0793@gmail.com | 5 Doreen Dr. Pelham, NH</h2>
+	<h3>Objective</h3>
+	<p>To obtain an entry level position in the field of Information Technology.</p>
+	<h3>Experience</h3>
+	<p id="p2">The Tech Foundry-Intern(Jan. 2017-Present)</p>
+	<ul>
+		<li>Learning about the IT field</li>
+		<li>Taking classes on programs such as Java script, HTML, and Microsoft Office</li>
+	</ul>
+	<p id="p2">Papa Gino's-Driver(Apr. 2016-Jan. 2017)</p>
+	<ul>
+		<li>Delivered food to customers</li>
+		<li>Answered phones and took customer orders</li>
+	</ul>
+	<p id="p2">Grand Rental Station-Customer Service Member(May 2015-Jan 2017)</p>
+	<ul>
+		<li>Set up equipment for events at customers’ homes</li>
+		<li>Loaded machinery and equipment for customers</li>
+	</ul>
+	<p id="p2">Pole Position Travel-Intern(June-August 2012)</p>
+	<ul>
+		<li>Updated company’s website</li>
+		<li>Organized customers’ ticket orders</li>
+		<li>Worked with customers</li>
+	</ul>
+	<h3>Education</h3>
+	<p id="p2">University of New Hampshire-Masters IT(Fall 2016-Present)</p>
+	<ul>
+		<li>3.33 Overall G.P.A.</li>
+	</ul>
+	<p id="p2">Plymouth State University-B.A. Communications: Film and Media Studies(Fall 2012-Spring 2015)</p>
+	<ul>
+		<li>Made the President's List every year (3.67 Overall G.P.A.)</li>
+	    <li>Member of the National Communications Honor Society.</li>
+	</ul>
+    <h3>Skills/Hobbies</h3>
+	<ul>
+		<li>Excel: Familiar</li>
+		<li>Java: Some experience</li>
+		<li>Is a fourth degree black belt in Gojo-ryu karate</li>
+		<li>Hobbies: Drawing, karate, playing piano and saxophone, skiing, playing board and video games</li>
+	</ul>
+  </body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

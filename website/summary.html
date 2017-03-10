@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<title>Bio</title>
+  </head>
+  
+  <body>
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="resume.html">Resume</a>
+		<a href="mysite.html">Home</a>
+		<a href="summary.html">Summary</a>
+      </div>
+	</div>
+	<h1>Summary<h1>
+	<img src="images/me.jpg">
+	<p> My name is Chris. I am a graduate student attending the University of New Hampshire in Manchester, New Hampshire.<br>
+	   I'm studying for my Masters in Information Technology, which I plan to recieve in 2019.<br>
+	   I am also a student at Tech Foundry, which is a non-profit organization designed to help people get into the IT field.
+	</p>
+	<a id="p_example" href="https://www.linkedin.com/in/chris-howell-0b85b7a1/">My LinkedIn Page</a>
+  </body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
